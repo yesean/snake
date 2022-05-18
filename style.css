@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.score {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.pause {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.pause:hover,
+.pause:focus {
+  background-color: #f082ac;
+}
+
+.board {
+  border: 1px solid black;
+}
+
+.cell {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  width: 25px;
+  height: 25px;
+}
+
+.cell.snake {
+  background-color: #264653;
+}
+
+.cell.snake.head {
+  background-color: #2a9d8f;
+}
+
+.cell.food {
+  background-color: #f4a261;
+}
